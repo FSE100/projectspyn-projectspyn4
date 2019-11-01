@@ -25,7 +25,7 @@ while 1
         case 'downarrow'
             %Move.turnAround();
             
-            backUp;
+            driveBackwards;
             disp('down pressed')
             
         case 'leftarrow'
