@@ -5,6 +5,7 @@ InitKeyboard();
 %brick = MyBrick;
 %move = Move_RevA1(myBrick);
 
+%Right motor = 'C', Left motor = 'B'
 while 1
     pause (0.1);
     
@@ -23,14 +24,20 @@ while 1
             
         case 'downarrow'
             %Move.turnAround();
+            
+            backUp;
             disp('down pressed')
             
         case 'leftarrow'
             %Move.turnLeft();
+            
+            turnLeft;
             disp('left pressed')
             
         case 'rightarrow'
             %Move.turnRight();
+            
+            turnRight
             disp('right pressed')
             
         case 0
